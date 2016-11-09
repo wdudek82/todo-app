@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	    <link rel="stylesheet" type="text/css" href="css/style.css">
+	    <title>todomvc</title>
+	</head>
+	<body>
+		<h1 id="test">TODO List</h1>
+
+		<div>
+			<!-- <button onclick="handlers.displayTodos()">Display All</button> -->
+			<button onclick="handlers.toggleAll()">Toggle All</button>
+		</div>
+
+		<div>
+			<button onclick="handlers.addTodo()">Add</button>
+			<input id="addItem" type="text">
+		</div>
+		
+		<div>
+			<button onclick="handlers.updateTodo()">Update</button>
+			<input id="updateItemIndexInput" type="number">
+			<input id="updateItemTextInput" type="text">
+		</div>
+		
+		<div>
+			<button onclick="handlers.toggleTodo()">Toggle</button>
+			<input id="toggleItemIndexInput" type="number">
+		</div>
+		
+		<!-- <div> -->
+<!-- 			<button onclick="handlers.deleteTodo()">Delete</button>
+			<input id="deleteItemIndexInput" type="number"> -->
+		<!-- </div> -->
+
+		<ul id="todos"></ul>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	    <script src="js/custom.js"></script>
+	</body>
+</html>
